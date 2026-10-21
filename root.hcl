@@ -32,9 +32,9 @@ remote_state {
     key    = "${path_relative_to_include()}/terraform.tfstate"
 
     # S3-compatible endpoint (e.g. MinIO). region is still required by the S3
-    # backend; us-east-1 is MinIO's default unless the server sets its own region.
+    # backend; eu-central-1 is MinIO's default unless the server sets its own region.
     endpoints      = { s3 = "TODO-https://minio.example.internal:9000" }
-    region         = "us-east-1"
+    region         = "eu-central-1"
     use_path_style = true
 
     # Native S3 locking: a <key>.tflock object written with a conditional PUT
